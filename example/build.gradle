@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+
+archivesBaseName = 'android-crop-example'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION
+    }
+}
+
+dependencies {
+    compile project(':lib')
+}
